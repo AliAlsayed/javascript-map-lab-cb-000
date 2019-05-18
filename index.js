@@ -36,3 +36,13 @@ var sortedRobots = robots.map(function(robot){
     })
   }
 })
+
+
+var coloredZebraStripes = zebraStripes.map(function(stripe, i){
+  if (i % 2 == 0){
+    return Object.assign({}, stripe, {
+      width: stripe.width,
+      color: 'black'
+    })
+  }
+})
